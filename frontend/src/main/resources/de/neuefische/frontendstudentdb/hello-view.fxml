@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
-
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="de.neuefische.frontendstudentdb.HelloController">
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.neuefische.frontendstudentdb.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <children>
+        <TextField fx:id="studentName" text="Name"/>
+        <TextField fx:id="studentAge" text="Alter"/>
+        <TextField fx:id="studentCourse" text="Kurs"/>
+        <Button fx:id="addStudentButton" mnemonicParsing="false" onAction="#addStudent" text="Add Student"/>
+        <ListView fx:id="studentListView" prefHeight="460.0" prefWidth="560.0"/>
+        <Button fx:id="deleteStudentButton" mnemonicParsing="false" onAction="#deleteStudent" text="Delete Student"/>
+    </children>
 </VBox>

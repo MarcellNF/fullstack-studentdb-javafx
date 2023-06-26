@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="de.neuefische.frontendstudentdb.StudentDetailsController">
+   <children>
+      <Label fx:id="name"/>
+      <Label fx:id="matriculationNumber"/>
+      <Label fx:id="course"/>
+      <Label fx:id="age"/>
+   </children>
+</VBox>
